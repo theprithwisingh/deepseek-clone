@@ -9,7 +9,7 @@ const Sidebar = ({ expand, setExpand }) => {
 
   
     const {openSignIn}= useClerk();
-    const {user} = useAppContext();
+    const {user,chats,createNewChat} = useAppContext();
 
     const [openMenu, setOpenMenu] = useState({id:0, open:false})
 
@@ -63,6 +63,7 @@ const Sidebar = ({ expand, setExpand }) => {
 
       {/* New Chat Button */}
       <button
+      onClick={createNewChat}
         className={`mt-8 flex items-center justify-center cursor-pointer ${
           expand
             ? "bg-primary hover:opacity-90 rounded-2xl gap-2 p-2.5 w-max"
@@ -86,8 +87,8 @@ const Sidebar = ({ expand, setExpand }) => {
       {/* Recents */}
       <div className={`mt-8 text-white/25 text-sm ${expand ? "block" : "hidden"}`}>
         <p className="my-1">Recents</p>
-        {/* Chat labels here */}
-        <ChatLabel openMenu={openMenu} setOpenMenu={setOpenMenu}/>
+        {chats.map((chats, index)=><ChatLabel key={index} name={chats.name} id={chats._id} openMenu={openMenu} setOpenMenu={setOpenMenu}/>)}
+        
       </div>
 
       {/* Spacer to push QR to bottom */}
