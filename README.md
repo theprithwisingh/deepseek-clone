@@ -47,7 +47,7 @@ A modern AI-powered web application built with **Next.js 15**, **React 19**, **T
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
 CLERK_SECRET_KEY=your_clerk_secret_key
 
-OPENAI_API_KEY=your_openai_key
+DEEPSEEK_API_KEY=your_openai_key
 
 MONGODB_URI=your_mongodb_connection_string
 
