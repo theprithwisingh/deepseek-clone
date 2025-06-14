@@ -1,4 +1,4 @@
-# AIProject 🤖
+# AIProject
 
 A modern AI-powered web application built with **Next.js 15**, **React 19**, **Tailwind CSS 4**, **Clerk authentication**, and **OpenAI API**. This project integrates database support via **MongoDB (Mongoose)** and supports Markdown rendering, webhooks via **Svix**, and toast notifications for UI feedback.
 
