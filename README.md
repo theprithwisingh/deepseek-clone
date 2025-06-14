@@ -39,3 +39,19 @@ A modern AI-powered web application built with **Next.js 15**, **React 19**, **T
    ```bash
    git clone https://github.com/your-username/aiproject.git
    cd aiproject
+2. **dependecies**
+   ```bash
+   npm install
+3.**.env.local**
+```bash
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+
+OPENAI_API_KEY=your_openai_key
+
+MONGODB_URI=your_mongodb_connection_string
+
+SVIX_SECRET=your_svix_webhook_secret
+
+
+❤️ by Prithwi singh
